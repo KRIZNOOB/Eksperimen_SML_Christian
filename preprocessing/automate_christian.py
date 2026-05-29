@@ -60,7 +60,7 @@ def preprocess_data(input_path: Path, output_path: Path) -> None:
 def main() -> None:
 	base_dir = Path(__file__).resolve().parent
 	input_path = base_dir.parent / "dataset" / "bank_transactions_data.csv"
-	output_path = base_dir / "dataset_processed.csv"
+	output_path = base_dir / "bank_transactions_data_preprocessing.csv"
 	preprocess_data(input_path, output_path)
 
 
